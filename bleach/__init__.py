@@ -33,7 +33,7 @@ def clean(
     attributes=ALLOWED_ATTRIBUTES,
     styles=ALLOWED_STYLES,
     protocols=ALLOWED_PROTOCOLS,
-    strip=False,
+    strip=True,
     strip_comments=True,
 ):
     """Clean an HTML fragment of malicious content and return it

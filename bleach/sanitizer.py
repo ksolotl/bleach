@@ -160,6 +160,9 @@ class Cleaner(object):
         :raises TypeError: if ``text`` is not a text type
 
         """
+        if text is None:
+            return None
+
         if not isinstance(text, six.string_types):
             message = (
                 "argument cannot be of '{name}' type, must be of text type".format(
